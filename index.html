@@ -3,146 +3,112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M S MANOHAR | Portfolio</title>
+  <title>M S Manohar | AI Cloud Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" href="assets/profile.jpg" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav id="navbar">
-    <div class="container nav-container">
-      <h2 class="logo">M S MANOHAR</h2>
 
-      <!-- Hamburger Icon -->
-      <div id="menu-icon">&#9776;</div>
-
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Header -->
+  <!-- ===== NAVBAR ===== -->
   <header>
-    <div class="container">
-      <h1>AI Cloud Engineer</h1>
-      <p>2.9+ Years of Experience in Cloud, DevOps & CI/CD</p>
-
-      <!-- Theme Toggle -->
-      <button id="theme-toggle">🌙 Dark Mode</button>
-
-      <div class="social-links">
-        <a href="mailto:manoharsankar93@gmail.com">Email</a>
-        <a href="https://github.com/ManoharSankar" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/msmanohar" target="_blank">LinkedIn</a>
-      </div>
-    </div>
+    <nav class="navbar">
+      <h1 class="logo">M S MANOHAR</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        AI Cloud Engineer with 2.9+ years of experience in automating, deploying,
-        and maintaining cloud-native applications. Skilled in CI/CD, containerization,
-        cloud infrastructure (AWS), and monitoring (Prometheus, Grafana).
-      </p>
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero">
+    <img src="assets/profile.jpg" alt="M S Manohar" class="profile-img" />
+    <h2>Hello, I'm <span class="gradient-text">M S Manohar</span></h2>
+    <p>AI Cloud Engineer | DevOps | AWS | Kubernetes | Docker | CI/CD</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section">
+    <h2 class="section-title gradient-text">About Me</h2>
+    <p class="about-text">
+      AI Cloud Engineer with 2.9+ years of experience in automating, deploying, and maintaining cloud-native applications.
+      Skilled in CI/CD, containerization, cloud infrastructure (AWS), and monitoring (Prometheus, Grafana). Passionate about
+      leveraging DevOps practices to deliver scalable, high-quality solutions.
+    </p>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section">
+    <h2 class="section-title gradient-text">Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><p>Docker</p><div class="bar"><div class="progress" style="width:90%"></div></div></div>
+      <div class="skill"><p>Kubernetes</p><div class="bar"><div class="progress" style="width:85%"></div></div></div>
+      <div class="skill"><p>Jenkins</p><div class="bar"><div class="progress" style="width:80%"></div></div></div>
+      <div class="skill"><p>AWS</p><div class="bar"><div class="progress" style="width:88%"></div></div></div>
+      <div class="skill"><p>Prometheus & Grafana</p><div class="bar"><div class="progress" style="width:75%"></div></div></div>
     </div>
   </section>
 
-  <!---Projects-->
+  <!-- ===== PROJECTS SECTION ===== -->
   <section id="projects" class="section">
-  <h2 class="section-title">Projects</h2>
-  <div class="projects-container">
+    <h2 class="section-title gradient-text">Featured Projects</h2>
+    <div class="projects-grid">
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <img src="assets/project1.png" alt="Project 1" class="project-img">
-      <div class="project-info">
-        <h3>CI/CD Pipeline Automation</h3>
-        <p>Implemented a Jenkins pipeline to build, test, and deploy Dockerized microservices on AWS using ECR and ECS.</p>
-        <p class="tech-stack">Tech: Jenkins | Docker | AWS | GitHub Actions</p>
-        <div class="project-links">
-          <a href="https://github.com/username/project1" target="_blank" class="btn">GitHub</a>
-          <a href="#" class="btn">Live Demo</a>
+      <div class="project-card">
+        <img src="assets/project1.png" alt="CI/CD Project" class="project-img" />
+        <div class="project-content">
+          <h3>DevOps Pipeline for React App</h3>
+          <p>CI/CD pipeline using Jenkins & Docker with AWS EC2. Integrated monitoring via Prometheus & Grafana.</p>
+          <div class="tech-badges"><span>Jenkins</span><span>Docker</span><span>AWS</span></div>
+          <div class="project-links">
+            <a href="https://github.com/ManoharSankar" class="btn">GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <img src="assets/project2.png" alt="Project 2" class="project-img">
-      <div class="project-info">
-        <h3>React Portfolio Website</h3>
-        <p>Designed a responsive personal portfolio website using React.js with dark/light mode toggle and animations.</p>
-        <p class="tech-stack">Tech: React | TailwindCSS | JavaScript</p>
-        <div class="project-links">
-          <a href="https://github.com/username/project2" target="_blank" class="btn">GitHub</a>
-          <a href="#" class="btn">Live Demo</a>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="React Portfolio" class="project-img" />
+        <div class="project-content">
+          <h3>React Portfolio Website</h3>
+          <p>Responsive dark/light theme portfolio using React.js with smooth transitions and Framer Motion animations.</p>
+          <div class="tech-badges"><span>React</span><span>TailwindCSS</span><span>Framer Motion</span></div>
+          <div class="project-links">
+            <a href="https://github.com/ManoharSankar" class="btn">GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Project 3 -->
-    <div class="project-card">
-      <img src="assets/project3.png" alt="Project 3" class="project-img">
-      <div class="project-info">
-        <h3>Monitoring System with Prometheus & Grafana</h3>
-        <p>Built a real-time monitoring dashboard for Dockerized apps using Prometheus and Grafana on AWS EC2.</p>
-        <p class="tech-stack">Tech: Prometheus | Grafana | Docker | AWS EC2</p>
-        <div class="project-links">
-          <a href="https://github.com/username/project3" target="_blank" class="btn">GitHub</a>
-          <a href="#" class="btn">Live Demo</a>
+      <div class="project-card">
+        <img src="assets/project3.png" alt="Monitoring Dashboard" class="project-img" />
+        <div class="project-content">
+          <h3>Monitoring System Dashboard</h3>
+          <p>Implemented Prometheus & Grafana dashboards to visualize metrics and set up alerting for Dockerized applications.</p>
+          <div class="tech-badges"><span>Grafana</span><span>Prometheus</span><span>Docker</span></div>
+          <div class="project-links">
+            <a href="https://github.com/ManoharSankar" class="btn">GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Technical Skills</h2>
-      <div class="skill">
-        <span>Docker & Kubernetes</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-      </div>
-      <div class="skill">
-        <span>CI/CD (Jenkins)</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-      </div>
-      <div class="skill">
-        <span>AWS Cloud</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
-      </div>
-      <div class="skill">
-        <span>Monitoring (Prometheus, Grafana)</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-      </div>
-      <div class="skill">
-        <span>Python & Shell Scripting</span>
-        <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:manoharsankar93@gmail.com">manoharsankar93@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/ManoharSankar" target="_blank">github.com/ManoharSankar</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/msmanohar" target="_blank">linkedin.com/in/msmanohar</a></p>
-    </div>
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section">
+    <h2 class="section-title gradient-text">Contact</h2>
+    <p>Email: <a href="mailto:manoharsankar93@gmail.com">manoharsankar93@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/ManoharSankar" target="_blank">github.com/ManoharSankar</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/msmanohar" target="_blank">linkedin.com/in/msmanohar</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 M S MANOHAR. All rights reserved.</p>
+    <p>© 2025 M S Manohar | Built with ❤️ using HTML, CSS & JS</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
